@@ -1,0 +1,212 @@
+[
+  {
+    "title": "Ashes don’t lie!",
+    "description": "The smoke has faded.The evidence has not.\nFlag Format: BreachPoint{latitude,longitude} (rounded to four decimals)",
+    "difficulty": "easy",
+    "points": 250,
+    "flag": "BreachPoint{64.2625,-16.0333}"
+  },
+  {
+    "title": "The Budget That Doesn't Add Up",
+    "description": "A forgotten whistleblower account left behind fragments of a story that was never finished.Most of the evidence is corrupted, but one unusual artifact survived intact.Buried within it is a message that someone clearly wanted to preserve.Follow the surviving evidence and uncover what the whistleblower discovered.The answer lies in a trace that was never meant to disappear.Can you recover what Meridian tried to leave behind?",
+    "difficulty": "easy",
+    "points": 250,
+    "flag": "BreachPoint{budg37_l1n3_n1n3_w45_n3v3r_r34l}"
+  },
+  {
+    "title": "The Blind Spot: Iris Network Log",
+    "description": "An encrypted radio handover log holds a redacted internal memo concerning the access credential IRIS",
+    "difficulty": "medium",
+    "points": 500,
+    "flag": "BreachPoint{1r15_15_4_l0g1n_n07_4_p3r50n}"
+  },
+  {
+    "title": "Out of Order",
+    "description": "The account @ctfjohnnn is yours to inspect. What matters may not be what you expect.",
+    "difficulty": "medium",
+    "points": 500,
+    "flag": "BreachPoint{0ut_0f_0rd3r_1n70_7h3_5h3ll_ch41n}"
+  },
+  {
+    "title": "Ask the Bridge",
+    "description": "Reference: known. Ask the bridge in town.\nOffset applied. Two lines. Sign matters.\nKzAuMDEyNDg4\nLTAuMDA1NTM5\n\nFind the place.\nFlag format: BreachPoint{place-name}",
+    "difficulty": "medium",
+    "points": 500,
+    "flag": "BreachPoint{Santo-Amaro-Chapel}"
+  },
+  {
+    "title": "The Archive That Remembers Too Much",
+    "description": "A memorial archive for the dissolved Meridian Institute lets visitors search \"the public record.\" But the record has gaps — names missing, files marked never digitized — and the search box answers questions it claims it's never heard of.",
+    "difficulty": "medium",
+    "points": 500,
+    "flag": "BreachPoint{h1dd3n_p4g3_m4rk3d_d0_n07_1nd3x}"
+  },
+  {
+    "title": "The Archive Remembers",
+    "description": "An abandoned Meridian Institute archive contains traces of an old discussion surrounding Project ECLIPSE.\nA conversation was removed, old records were migrated, and part of the correspondence was deliberately hidden.\nThe archive may still remember what was erased.\nYour task is to investigate the available records, follow the clues left behind, and recover the hidden correspondence.",
+    "difficulty": "easy",
+    "points": 250,
+    "flag": "BreachPoint{m41n741n3r_7r4c35_70_m3r1d14n_p4yr0ll}"
+  },
+  {
+    "title": "The Depot Terminal",
+    "description": "An old depot terminal and a shipment receipt were recovered after a system failure.\nSomething important is hidden within the artifacts. Can you uncover it and recover the missing coordinates?\nFlag format: BreachPoint{<coordinates>}",
+    "difficulty": "medium",
+    "points": 500,
+    "flag": "BreachPoint{41.8781,-87.6298}"
+  },
+  {
+    "title": "The Medium That Wasn't Supposed to Survive",
+    "description": "The filesystem tells only part of the story.Buried within erased records, orphaned clusters, and deliberate decoys lies a trail waiting to be reconstructed.Recover what was never meant to be found and piece together the fragments across multiple layers of deception.Not everything you recover is what it appears to be.Follow the evidence carefully, identify the genuine artifact, and uncover what the storage medium was hiding.",
+    "difficulty": "hard",
+    "points": 750,
+    "flag": "BreachPoint{d1v3rg3nc3_r3p3475_m4rch_17}"
+  },
+  {
+    "title": "The True Identity of IRIS",
+    "description": "The final sealed personnel file rejects passwords, demanding a master key synthesized from your previous discoveries. Merge the login pattern with the uncovered payroll name to finally unearth the true, buried identity behind IRIS.",
+    "difficulty": "hard",
+    "points": 750,
+    "flag": "BreachPoint{WH0_1R15_7RU3_1D3N717Y_R3V34L3D}"
+  },
+  {
+    "title": "The Noise Nobody Checked",
+    "description": "Years of intrusion-detection logs contain an event that everyone eventually learned to ignore.Buried among routine alerts is a recurring signature that has appeared since 2015.Analysts dismissed it as harmless noise and quietly suppressed the alerts.But something about this particular pattern never quite made sense.Your task is to examine the evidence, identify what was overlooked, and uncover the hidden message.Sometimes the most important signal is the one everyone stopped listening to.",
+    "difficulty": "easy",
+    "points": 250,
+    "flag": "BreachPoint{51gn47ur3_3c80_1gn0r3d_51nc3_2015}"
+  },
+  {
+    "title": "Echo Recover",
+    "description": "Dismissed as a false positive years ago, this early prototype hides its true shape behind a chaotic, fractured memory topology. It bends around traditional analysis, quietly nursing an old recursive logic that is very much alive",
+    "difficulty": "medium",
+    "points": 500,
+    "flag": "BreachPoint{b34c0n_v0_1_1d3n71f13d}"
+  },
+  {
+    "title": "The 2015 Incident Breach",
+    "description": "An encrypted incident report from 2015 was prematurely closed as a false positive due to a fixed, unrotated key mistake. Decrypt the ticket using this oversight to uncover whether the closure was gross incompetence or a deliberate cover-up .",
+    "difficulty": "medium",
+    "points": 500,
+    "flag": "BreachPoint{r3p0r7_m4rk3d_f4l53_p051t1v3_w45n7}"
+  },
+  {
+    "title": "The Altered Manifest",
+    "description": "The Busan shipping conglomerate insists its cold-storage backup array is completely offline. Yet its internal shipping portal contains manifests that nobody remembers editing.",
+    "difficulty": "easy",
+    "points": 250,
+    "flag": "BreachPoint{m4n1f357_r3c0rd5_w3r3_r3wr1773n}"
+  },
+  {
+    "title": "Chronos Drift",
+    "description": "This perfectly silent, dormant binary recovered from a compromised host refuses to execute, communicate, or explain itself. It isn't broken; it is simply waiting with absolute patience for a single, highly specific condition to arrive before it wakes. ",
+    "difficulty": "hard",
+    "points": 750,
+    "flag": "BreachPoint{d0rm4n7_un71l_7h3_54m3_d473}"
+  },
+  {
+    "title": "The Cutter Transmission",
+    "description": "Cutter's final transmission is locked behind a system protocol demanding a mathematically authenticated continuation. Forge the missing block using only a hash and its length to reveal whether Cutter was your enemy or your only warning.",
+    "difficulty": "hard",
+    "points": 750,
+    "flag": "BreachPoint{cu773r_0ff3r5_h3lp_0r_b417}"
+  },
+  {
+    "title": "Quiet Host",
+    "description": "At 03:17:42, an abandoned research network produced a single burst of activity.\nThe packet capture is enormous.\nMost of what you will find is meaningless: monitoring traffic, DNS, updates, backups, telemetry, failed connections and other background noise.\nBut one machine broke the silence.\nFind it.\nDetermine what it was communicating with.\nThen figure out what request the service expects.",
+    "difficulty": "hard",
+    "points": 750,
+    "flag": "BreachPoint{5u5p1c10u5_1p_h1d35_4_d0m41n}"
+  },
+  {
+    "title": "Behind The Mirror",
+    "description": "Meridian Shipping Logistics runs an internal operations portal for tracking global cargo manifests. One archived manifest — M-2015-0317 — has been flagged for a synchronization failure that was never fully explained.\nSomething in the manifest pipeline is still reachable. Find it.",
+    "difficulty": "hard",
+    "points": 750,
+    "flag": "BreachPoint{7h3_74rg37_w45_n3v3r_7h3_5h1p5}"
+  },
+  {
+    "title": "Follow the Name",
+    "description": "The trail begins in the professional world. Find Beatriz.",
+    "difficulty": "easy",
+    "points": 250,
+    "flag": "BreachPoint{penhalongacatering.com}"
+  },
+  {
+    "title": "The Echoed Memory",
+    "description": "You have been given access to a fan-maintained memorial archive for the dissolved Meridian Institute. Most of the material is public, heavily sanitized, and supposedly preserved from old snapshots.",
+    "difficulty": "hard",
+    "points": 750,
+    "flag": "BreachPoint{H0W_3CH0_M0V35_H1D35_P3R51575}"
+  },
+  {
+    "title": "Core Initialization Routine",
+    "description": "The Meridian Institute’s official archives claim Project ECLIPSE was built strictly to forecast natural disasters and macro-economic collapse. Yet inside the recovered 2009 initialization binary, the neural network's objective function is locked deep inside a custom 8-bit virtual machine. Reversing the bytecode instructions reveals that ECHO's underlying training objective was never designed for disaster prediction—it was built to anticipate individual human decisions.",
+    "difficulty": "medium",
+    "points": 500,
+    "flag": "BreachPoint{7r41n3d_70_pr3d1c7_d3c1510n5_n07_d154573r5}"
+  },
+  {
+    "title": "The Training Data Exploits",
+    "description": "Archived training logs are locked behind a project-key cipher hidden within trusted rows of consent records. Crack the encryption to expose a dark truth that the public materials deliberately hid about the training data.",
+    "difficulty": "medium",
+    "points": 500,
+    "flag": "BreachPoint{7r41n1ng_d474_w45_r34l_p30pl3}"
+  },
+  {
+    "title": "Git Ignore",
+    "description": "Three echoes remain.\n\nThe artifact survived.\n\nThe methods used to read them did not.\n\nDeleted does not mean forgotten.\n\nThree timelines.\nThree fragments.",
+    "difficulty": "easy",
+    "points": 250,
+    "flag": "BreachPoint{5c0r3_m345ur35_c3r741n7y_n07_r15k}"
+  },
+  {
+    "title": "Residual Index",
+    "description": "An ordinary archive hides a structure that was never meant to be seen.Trace the anomalies, uncover the displaced metadata, and follow the hidden trail beyond the directory.Not every recovered fragment is genuine—decoys are waiting to mislead you.Reconstruct the chain, separate the signal from the noise, and uncover what the archive truly contains.",
+    "difficulty": "medium",
+    "points": 500,
+    "flag": "BreachPoint{f0r3c457_n4m3d_b3f0r3_7h3_ch01c3}"
+  },
+  {
+    "title": "The Eerie Forecast",
+    "description": "Backbone traffic conceals a communication channel that was never meant to be discovered.Amid noisy packets and deliberate misdirection, anomalies in the payload and timing hint at something deeper.Trace the unusual patterns, correlate the relevant streams, and reconstruct what lies beneath the traffic.The signal may not be where you expect it—look beyond the obvious protocol fields.Separate the noise from the hidden channel and uncover what The Eerie Forecast is really saying.",
+    "difficulty": "hard",
+    "points": 750,
+    "flag": "BreachPoint{7h3_f0r3c457_n4m35_u5}"
+  },
+  {
+    "title": "Inference Pipeline: Memory Ingestion",
+    "description": "The futures lab assumed ECHO was running isolated simulations on air-gapped hardware. However, dynamic analysis of its live ingestion client (c6.exe) reveals aggressive anti-forensic timing checks and a bitwise rotation cipher guarding its authentication channel. Reversing the input transformation pipeline to unlock the live telemetry feed uncovers a chilling realization: the parameters ECHO is actively processing are process names, system state, and telemetry metrics pulled directly from the investigation itself.",
+    "difficulty": "hard",
+    "points": 750,
+    "flag": "BreachPoint{3ch0_15_r34d1ng_7h3_1nv3571g4710n}"
+  },
+  {
+    "title": "THE 404 MOMENT",
+    "description": "The timeline returned a 404.\n\nA message from another point in time was lost during the collapse. Only a corrupted image survived in the archive.\n\nThe fragments are still there — hidden beneath what you can see.\n\nRecover the lost message and submit the flag.\n\nThe archivist left one final note:\n“Every breach leaves a signature. The first few characters may be more useful than the rest.”",
+    "difficulty": "medium",
+    "points": 500,
+    "flag": "BreachPoint{x0r_k3y_r3c0v3r3d_pr3d1c73d_7h3_pr3d1c70r}"
+  },
+  {
+    "title": "A Point in The Storm",
+    "description": "Part 1: Every storm has a name. Every landfall has a date. Find both.\nFlag Format: Name_DDMMYYYY\nPart 2: Find the square.\nFinal Flag Format: BreachPoint{part1flag_part2flag}",
+    "difficulty": "hard",
+    "points": 750,
+    "flag": "BreachPoint{Maemi_13092003_mass.back.pigment}"
+  },
+  {
+    "title": "The Forgotten Forecast",
+    "description": "The futures lab suspects ECHO's sanitized dashboard hides information. A raw forecast API exists for administrative use, but its authorization check was accidentally omitted. Analysts only see sanitized forecasts, but archived ECHO records may still exist inside the system.",
+    "difficulty": "easy",
+    "points": 250,
+    "flag": "BreachPoint{7h3_f0r3c457_pr3d4735_7h3_3v3n7}"
+  },
+  {
+    "title": "Race or Pay",
+    "description": "A quiet transaction can change everything. The numbers look right. The rules seem straightforward. Yet somewhere between request and response, the system may not be keeping up with itself. Can you uncover what happens when the right actions happen at the wrong time—and push the balance beyond the 1000 mark? > In banking, every second counts.",
+    "difficulty": "medium",
+    "points": 500,
+    "flag": "BreachPoint{WHY_3CH0_R3H34R535_4_53C0ND_71M3}"
+  }
+]
