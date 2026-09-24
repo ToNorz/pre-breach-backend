@@ -51,5 +51,4 @@ services:
 
 volumes:
   postgres_data:
-    external: true
     name: prequalify_postgres_data
