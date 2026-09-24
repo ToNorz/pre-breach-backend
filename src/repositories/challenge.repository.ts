@@ -12,10 +12,25 @@ const playerChallengeColumns = {
   points: coreChallenge.points,
   createdAt: coreChallenge.createdAt,
   updatedAt: coreChallenge.updatedAt,
+  resourceLink: coreChallenge.resourceLink,
+  category: coreChallenge.category,
 };
 
+import { coreChallengeSolveCount } from "@/models/core/views";
+
 export async function findChallenges(executor: Executor = db) {
-  return executor.select(playerChallengeColumns).from(coreChallenge);
+  const results = await executor
+    .select({
+      ...playerChallengeColumns,
+      solvesCount: coreChallengeSolveCount.solves,
+    })
+    .from(coreChallenge)
+    .leftJoin(coreChallengeSolveCount, eq(coreChallengeSolveCount.challengeId, coreChallenge.id));
+    
+  return results.map(r => ({
+    ...r,
+    solvesCount: Number(r.solvesCount || 0)
+  }));
 }
 
 export async function findChallengeById(challengeId: string, executor: Executor = db) {
@@ -49,6 +64,7 @@ export async function updateChallenge(
     points: number;
     flagHash: string;
     updatedBy: string;
+    resourceLink: string;
   }>,
 ) {
   const rows = await db.update(coreChallenge).set(data).where(eq(coreChallenge.id, challengeId)).returning();

@@ -7,6 +7,7 @@ import {
   handleListChallengesPlayer,
   handleSubmitFlag,
   handleUpdateChallenge,
+  handleGetPlayerBoard,
 } from "@/controllers/challenges/challenge.controller";
 import { createChallengeBody, submitFlagBody, updateChallengeBody } from "@/schema/dto/challenge.dto";
 
@@ -14,6 +15,10 @@ const challengeParams = t.Object({ challengeId: t.String() });
 
 export const challengeRoutes = new Elysia()
   .use(authGuard)
+  .get(
+    "/board",
+    ({ user }) => handleGetPlayerBoard(user.id),
+  )
   .get(
     "/challenges",
     () => handleListChallengesPlayer(),

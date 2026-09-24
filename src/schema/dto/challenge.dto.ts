@@ -6,6 +6,7 @@ export const createChallengeBody = t.Object({
   difficulty: t.Union([t.Literal("easy"), t.Literal("medium"), t.Literal("hard"), t.Literal("expert")]),
   points: t.Number({ minimum: 1 }),
   flag: t.String({ minLength: 1 }),
+  resourceLink: t.Optional(t.String()),
 });
 
 export const updateChallengeBody = t.Object({
@@ -14,6 +15,7 @@ export const updateChallengeBody = t.Object({
   difficulty: t.Optional(t.Union([t.Literal("easy"), t.Literal("medium"), t.Literal("hard"), t.Literal("expert")])),
   points: t.Optional(t.Number({ minimum: 1 })),
   flag: t.Optional(t.String({ minLength: 1 })),
+  resourceLink: t.Optional(t.String()),
 });
 
 export const submitFlagBody = t.Object({

@@ -8,6 +8,9 @@ import {
   findSolveByTeamAndChallenge,
 } from "@/repositories/submission.repository";
 import { findUserTeamMembership } from "@/repositories/team.repository";
+import { eq, sql } from "drizzle-orm";
+import { coreSolve } from "@/models/core/solve";
+import { coreChallenge } from "@/models/core/challenge";
 
 function hashFlag(flag: string): string {
   return createHash("sha256").update(flag.trim()).digest("hex");
@@ -49,7 +52,33 @@ export async function submitFlag(
       return { kind: "duplicate" as const };
     }
 
-    const pointsAwarded = challenge.points;
+    // Calculate dynamic points
+    const solvesQuery = await tx.select({ count: sql<number>`count(*)` }).from(coreSolve).where(eq(coreSolve.challengeId, challengeId));
+    const currentSolves = Number(solvesQuery[0]?.count || 0);
+    const newSolvesCount = currentSolves + 1;
+    
+    let initialPoints = 500;
+    let minPoints = 300;
+    if (challenge.difficulty === "easy") { initialPoints = 250; minPoints = 100; }
+    else if (challenge.difficulty === "medium") { initialPoints = 500; minPoints = 300; }
+    else if (challenge.difficulty === "hard") { initialPoints = 750; minPoints = 450; }
+    else if (challenge.difficulty === "expert") { initialPoints = 1000; minPoints = 600; }
+    
+    const decay = 10;
+    let pointsAwarded = initialPoints;
+    if (newSolvesCount >= decay) {
+      pointsAwarded = minPoints;
+    } else {
+      const drop = (initialPoints - minPoints) / decay;
+      pointsAwarded = Math.max(minPoints, Math.floor(initialPoints - ((newSolvesCount - 1) * drop)));
+    }
+
+    // Update the challenge with the new points so it displays correctly
+    await tx.update(coreChallenge)
+      .set({ points: pointsAwarded })
+      .where(eq(coreChallenge.id, challengeId));
+
+
 
     const submission = await createSubmission(
       { teamId: membership.teamId, submittedBy: userId, challengeId, rawInput: rawFlag, verdict: "correct" },

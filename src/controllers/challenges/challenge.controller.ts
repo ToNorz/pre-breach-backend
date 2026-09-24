@@ -5,11 +5,16 @@ import {
   removeChallenge,
   listChallengesAdmin,
   listChallengesPlayer,
+  getPlayerBoard,
 } from "@/services/challenges/challenge.service";
 import { submitFlag } from "@/services/challenges/submission.service";
 
 export async function handleListChallengesAdmin() {
   return listChallengesAdmin();
+}
+
+export async function handleGetPlayerBoard(userId: string) {
+  return getPlayerBoard(userId);
 }
 
 export async function handleListChallengesPlayer() {

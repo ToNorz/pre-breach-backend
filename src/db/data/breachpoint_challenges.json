@@ -1,212 +1,154 @@
 [
   {
-    "title": "Ashes don’t lie!",
-    "description": "The smoke has faded.The evidence has not.\nFlag Format: BreachPoint{latitude,longitude} (rounded to four decimals)",
-    "difficulty": "easy",
+    "title": "DNS Whispers",
+    "description": "Our IDS flagged a workstation making a lot of odd DNS lookups to a domain nobody recognizes. No file ever left over HTTP... but data left anyway.",
+    "difficulty": "Medium",
+    "category": "Forensics",
+    "points": 500,
+    "flag": "BreachPoint{dns_wh1spers_c4rry_secr3ts}",
+    "resourceLink": "https://drive.google.com/file/d/1YSJQSMVoK4Q3OJA_DynCINoqkRC7ZVjQ/view?usp=drive_link"
+  },
+  {
+    "title": "Picture Perfect ",
+    "description": "Someone sent us this souvenir picture from the Axios office. The image itself is boring. The *file*, on the other hand, remembers where it's been.\n",
+    "difficulty": "Easy",
+    "category": "Forensics",
     "points": 250,
-    "flag": "BreachPoint{64.2625,-16.0333}"
+    "flag": "BreachPoint{m3tadata_r3members_everyth1ng}",
+    "resourceLink": "https://drive.google.com/file/d/1E3l6kshnGf1QhLsasClHvOUKVDdfLT9M/view?usp=drive_link"
   },
   {
-    "title": "The Budget That Doesn't Add Up",
-    "description": "A forgotten whistleblower account left behind fragments of a story that was never finished.Most of the evidence is corrupted, but one unusual artifact survived intact.Buried within it is a message that someone clearly wanted to preserve.Follow the surviving evidence and uncover what the whistleblower discovered.The answer lies in a trace that was never meant to disappear.Can you recover what Meridian tried to leave behind?",
-    "difficulty": "easy",
+    "title": "Ghost in Binary ",
+    "description": "Months ago, an unknown program slipped through a company's internal network. It stole nothing and encrypted nothing. Then it vanished from every machine it touched.\nAll the responders kept is a single fingerprint of the sample, code-named Agent. The author left no signature, no taunt and no confession. Analysts believe the only words this file will ever say are the ones it says when it's out of its depth.\nFind the sample and listen closely to how it begins.\nSHA-256: 881941ea24e92f4bd4d69d79e27ce1d2b10094172cb3cc93b223daf70ef2d867\nFlag format: BreachPoint{Your_Found_Text_With_Underscores}\n",
+    "difficulty": "Easy",
+    "category": "Forensics",
     "points": 250,
-    "flag": "BreachPoint{budg37_l1n3_n1n3_w45_n3v3r_r34l}"
+    "flag": "BreachPoint{!This_program_cannot_be_run_in_DOS_mode}"
   },
   {
-    "title": "The Blind Spot: Iris Network Log",
-    "description": "An encrypted radio handover log holds a redacted internal memo concerning the access credential IRIS",
-    "difficulty": "medium",
-    "points": 500,
-    "flag": "BreachPoint{1r15_15_4_l0g1n_n07_4_p3r50n}"
+    "title": "Locked Room",
+    "description": "We seized a device and pulled everything off it. The secret is right there in the\nevidence — sealed inside an encrypted vault. The catch: the person who sealed it\nused a device that throws the key away the instant the v      ault closes.",
+    "difficulty": "Hard",
+    "category": "Forensics",
+    "points": 750,
+    "flag": "BreachPoint{encrypti0n_1s_the_l0cked_r00m}",
+    "resourceLink": "https://drive.google.com/file/d/12Syo9Yny9O6tRRoErZWn3qhkPy-T6KH9/view?usp=drive_link"
   },
   {
-    "title": "Out of Order",
-    "description": "The account @ctfjohnnn is yours to inspect. What matters may not be what you expect.",
-    "difficulty": "medium",
-    "points": 500,
-    "flag": "BreachPoint{0ut_0f_0rd3r_1n70_7h3_5h3ll_ch41n}"
-  },
-  {
-    "title": "Ask the Bridge",
-    "description": "Reference: known. Ask the bridge in town.\nOffset applied. Two lines. Sign matters.\nKzAuMDEyNDg4\nLTAuMDA1NTM5\n\nFind the place.\nFlag format: BreachPoint{place-name}",
-    "difficulty": "medium",
-    "points": 500,
-    "flag": "BreachPoint{Santo-Amaro-Chapel}"
-  },
-  {
-    "title": "The Archive That Remembers Too Much",
-    "description": "A memorial archive for the dissolved Meridian Institute lets visitors search \"the public record.\" But the record has gaps — names missing, files marked never digitized — and the search box answers questions it claims it's never heard of.",
-    "difficulty": "medium",
-    "points": 500,
-    "flag": "BreachPoint{h1dd3n_p4g3_m4rk3d_d0_n07_1nd3x}"
-  },
-  {
-    "title": "The Archive Remembers",
-    "description": "An abandoned Meridian Institute archive contains traces of an old discussion surrounding Project ECLIPSE.\nA conversation was removed, old records were migrated, and part of the correspondence was deliberately hidden.\nThe archive may still remember what was erased.\nYour task is to investigate the available records, follow the clues left behind, and recover the hidden correspondence.",
-    "difficulty": "easy",
+    "title": "Whisper",
+    "description": "We intercepted a short message, but it was \"encrypted\" by someone who thought\none byte of key was enough to keep a secret. It wasn't.",
+    "difficulty": "Easy",
+    "category": "Cryptography ",
     "points": 250,
-    "flag": "BreachPoint{m41n741n3r_7r4c35_70_m3r1d14n_p4yr0ll}"
+    "flag": "BreachPoint{x0r_1s_a_reversible_h4ndsh4ke}",
+    "resourceLink": "https://drive.google.com/file/d/1uICXd8ucGhi_bVgluFJqcl9BdFX2rkMo/view?usp=sharing"
   },
   {
-    "title": "The Depot Terminal",
-    "description": "An old depot terminal and a shipment receipt were recovered after a system failure.\nSomething important is hidden within the artifacts. Can you uncover it and recover the missing coordinates?\nFlag format: BreachPoint{<coordinates>}",
-    "difficulty": "medium",
+    "title": "Nonce Vault",
+    "description": "We recovered a capture from a logging service that encrypts every line with\n**AES-256-CTR**. Helpfully, for most lines we have both the plaintext and the\nciphertext. For one line — the interesting one — we only have the ciphertext.\n\nStream ciphers are famously fragile when people get lazy with nonces...\n",
+    "difficulty": "Hard",
+    "category": "Cryptography ",
+    "points": 750,
+    "flag": "BreachPoint{a_nonce_used_0nce_stays_safe_f0rever}",
+    "resourceLink": "https://drive.google.com/file/d/1mApwspPkJ1QvgxD7HjxQDkL8Z6zhTGNv/view?usp=sharing"
+  },
+  {
+    "title": "Mixed Signals ",
+    "description": "At 03:12 a.m., the HALCYON-7 escrow appliance at Meridian Custody locked itself in the middle of a release ceremony. The tamper circuit wiped the key store before anyone could react, but our incident team managed to pull a raw capture off the diagnostics bridge in the seconds before it went dark.\nThe bridge was built for field technicians debugging failed key ceremonies. It shows a small window of each secret prime: the top bits of one of them in raw binary, and, because the front-panel LCD only speaks decimal, the last digits of the other.\nThe vendor's incident statement is confident:\n\"A couple of fragments cannot reconstruct a 1024-bit key. No customer data was exposed.\"\nTheir statement is half right: neither fragment is enough by itself. The escrow release token is still sitting in the capture, sealed under a key that no longer exists anywhere except in the maths.\nRecover the token.\nFiles\nCapture.bin -> Raw diagnostics-bridge capture from the incident\nVault_fw.py -> Firmware excerpt: framing, leak logic, key derivation, sealing (secrets stripped)\n",
+    "difficulty": "Hard",
+    "category": "Cryptography",
+    "points": 750,
+    "flag": "BreachPoint{b1ts_1n_h3x_d1g1ts_1n_d3c_th3_m1ddl3_g1v3s_1t_4w4y}",
+    "resourceLink": "https://drive.google.com/file/d/12UgojhVmWF6m8tHeBzwdqb_gRaVtcLoW/view?usp=sharing"
+  },
+  {
+    "Title": "twin primes",
+    "description": "Our intern generated an RSA key pair in a hurry. \"1024 bits, that's plenty,\" they\nsaid, and picked the two primes... one right after the other.",
+    "difficulty": "Medium",
+    "category": "Cryptography ",
     "points": 500,
-    "flag": "BreachPoint{41.8781,-87.6298}"
+    "Flag": "BreachPoint{clos3_pr1mes_m4ke_w3ak_m0duli}",
+    "resourceLink": "https://drive.google.com/file/d/1u-i1SVvEDN2Bo0NFrZXfdO5xCeiGEP72/view?usp=sharing"
   },
   {
-    "title": "The Medium That Wasn't Supposed to Survive",
-    "description": "The filesystem tells only part of the story.Buried within erased records, orphaned clusters, and deliberate decoys lies a trail waiting to be reconstructed.Recover what was never meant to be found and piece together the fragments across multiple layers of deception.Not everything you recover is what it appears to be.Follow the evidence carefully, identify the genuine artifact, and uncover what the storage medium was hiding.",
-    "difficulty": "hard",
-    "points": 750,
-    "flag": "BreachPoint{d1v3rg3nc3_r3p3475_m4rch_17}"
-  },
-  {
-    "title": "The True Identity of IRIS",
-    "description": "The final sealed personnel file rejects passwords, demanding a master key synthesized from your previous discoveries. Merge the login pattern with the uncovered payroll name to finally unearth the true, buried identity behind IRIS.",
-    "difficulty": "hard",
-    "points": 750,
-    "flag": "BreachPoint{WH0_1R15_7RU3_1D3N717Y_R3V34L3D}"
-  },
-  {
-    "title": "The Noise Nobody Checked",
-    "description": "Years of intrusion-detection logs contain an event that everyone eventually learned to ignore.Buried among routine alerts is a recurring signature that has appeared since 2015.Analysts dismissed it as harmless noise and quietly suppressed the alerts.But something about this particular pattern never quite made sense.Your task is to examine the evidence, identify what was overlooked, and uncover the hidden message.Sometimes the most important signal is the one everyone stopped listening to.",
-    "difficulty": "easy",
+    "title": "Cookie Quest",
+    "description": "The Axios \"Members Area\" remembers who you are with a session cookie. Regular\nmembers can't see the internal flag — only admins can. Become one.\n",
+    "difficulty": "Easy",
+    "category": "Web Exploitation",
     "points": 250,
-    "flag": "BreachPoint{51gn47ur3_3c80_1gn0r3d_51nc3_2015}"
+    "flag": "BreachPoint{c00kies_ar3_not_cr3dential5}",
+    "resourceLink": "https://cookiequest.vercel.app/"
   },
   {
-    "title": "Echo Recover",
-    "description": "Dismissed as a false positive years ago, this early prototype hides its true shape behind a chaotic, fractured memory topology. It bends around traditional analysis, quietly nursing an old recursive logic that is very much alive",
-    "difficulty": "medium",
+    "title": "Postcard",
+    "description": "Axios Postcards renders your message **on the server** so it always looks perfect. Maybe it renders it a little too literally.\n",
+    "difficulty": "Medium",
+    "category": "Web Exploitation",
     "points": 500,
-    "flag": "BreachPoint{b34c0n_v0_1_1d3n71f13d}"
+    "flag": "BreachPoint{ssti_1s_a_t3mplate_f0r_disaster}",
+    "resourceLink": "https://postcardssti.vercel.app"
   },
   {
-    "title": "The 2015 Incident Breach",
-    "description": "An encrypted incident report from 2015 was prematurely closed as a false positive due to a fixed, unrotated key mistake. Decrypt the ticket using this oversight to uncover whether the closure was gross incompetence or a deliberate cover-up .",
-    "difficulty": "medium",
+    "title": "Notary JWT",
+    "description": "The Axios Notary hands every visitor a signed JWT. Guests get `role: guest`;\nonly `role: admin` may read `/flag`. In the spirit of openness, the signing key's\n**public half is published** at `/pubkey` and `/.well-known/jwks.json`. Inspect\neverything. Forge yourself an admin token.\n",
+    "difficulty": "Hard",
+    "category": "Web Exploitation",
+    "points": 750,
+    "flag": "BreachPoint{y0u_cann0t_f0rge_wh4t_y0u_cann0t_c0mpute}",
+    "resourceLink": "https://bpnotary.vercel.app"
+  },
+  {
+    "title": "Ret2Win",
+    "description": "There's a `win()` function in this binary that never gets called. It prints the flag — but only if you call it *with the right argument*.\n\nConnect: nc 34.42.168.21 5002\n",
+    "difficulty": "Medium",
+    "category": "pwn",
     "points": 500,
-    "flag": "BreachPoint{r3p0r7_m4rk3d_f4l53_p051t1v3_w45n7}"
+    "flag": "BreachPoint{c0ntr0l_r1p_c0ntr0l_the_w0rld}",
+    "resourceLink": "https://drive.google.com/file/d/1OT0deXzmyJLkRb2Jrd1jBHiA71D4HK4z/view?usp=drive_link"
   },
   {
-    "title": "The Altered Manifest",
-    "description": "The Busan shipping conglomerate insists its cold-storage backup array is completely offline. Yet its internal shipping portal contains manifests that nobody remembers editing.",
-    "difficulty": "easy",
+    "title": "Fortified",
+    "description": "Yes, there's a buffer overflow. There's also a stack canary, PIE, full RELRO, NX, and not a single byte of output you can turn into a leak. The `print_flag()` function exists — it's just never called, and you have no way to find it.\n Connect: nc 34.42.168.21 5003",
+    "difficulty": "Hard",
+    "category": "Pwn",
+    "points": 750,
+    "flag": "BreachPoint{n0_l34k_n0_ret_this_wall_h0lds}",
+    "resourceLink": "https://drive.google.com/file/d/1U24dimWstkBp1SFPhBtBIVp9bZOnqwFW/view?usp=sharing"
+  },
+  {
+    "title": "Neighbors",
+    "description": "The security console asks for your name and stores it right next to a flag that says whether you're authorized. What could go wrong?\n\nConnect: nc 34.42.168.21 5001\n",
+    "difficulty": "Easy",
+    "category": "Pwn",
     "points": 250,
-    "flag": "BreachPoint{m4n1f357_r3c0rd5_w3r3_r3wr1773n}"
+    "flag": "BreachPoint{st4ck_variabl3s_are_neighb0rs}",
+    "resourceLink": "https://drive.google.com/file/d/1zoKT5Ig2tB9ebcC_BikX9PzS9aTcTI3N/view?usp=sharing"
   },
   {
-    "title": "Chronos Drift",
-    "description": "This perfectly silent, dormant binary recovered from a compromised host refuses to execute, communicate, or explain itself. It isn't broken; it is simply waiting with absolute patience for a single, highly specific condition to arrive before it wakes. ",
-    "difficulty": "hard",
-    "points": 750,
-    "flag": "BreachPoint{d0rm4n7_un71l_7h3_54m3_d473}"
+    "Title": "xor license",
+    "description": "We found this license checker. Supposedly, the *only* key it accepts is also the\nflag. Feed it the right string and it will tell you.",
+    "difficulty": "Easy",
+    "category": "Reverse Engineering",
+    "Points": 250,
+    "flag": "BreachPoint{r3ading_asm_1s_just_r3ading}",
+    "resourseLink": "https://drive.google.com/file/d/14raK8uE71YvdSvYDorzcJxaqbSRzAHWn/view?usp=drive_link"
   },
   {
-    "title": "The Cutter Transmission",
-    "description": "Cutter's final transmission is locked behind a system protocol demanding a mathematically authenticated continuation. Forge the missing block using only a hash and its length to reveal whether Cutter was your enemy or your only warning.",
-    "difficulty": "hard",
-    "points": 750,
-    "flag": "BreachPoint{cu773r_0ff3r5_h3lp_0r_b417}"
+    "Title": "oneway",
+    "description": "We intercepted a short message, but it was \"encrypted\" by someone who thought\none byte of key was enough to keep a secret. It wasn't.",
+    "difficulty": "Hard",
+    "category": "Reverse Engineering",
+    "Points": 750,
+    "flag": "BreachPoint{9c4f2e7a1b8d0356e6a9f1c3d5b70824f1e0a97c53b2d846a0f3c1927e8b6d05}",
+    "resourseLink": "https://drive.google.com/file/d/13ab16bBKQu2UEqh3zJ_TfPXes_IC_3sq/view?usp=drive_link"
   },
   {
-    "title": "Quiet Host",
-    "description": "At 03:17:42, an abandoned research network produced a single burst of activity.\nThe packet capture is enormous.\nMost of what you will find is meaningless: monitoring traffic, DNS, updates, backups, telemetry, failed connections and other background noise.\nBut one machine broke the silence.\nFind it.\nDetermine what it was communicating with.\nThen figure out what request the service expects.",
-    "difficulty": "hard",
-    "points": 750,
-    "flag": "BreachPoint{5u5p1c10u5_1p_h1d35_4_d0m41n}"
-  },
-  {
-    "title": "Behind The Mirror",
-    "description": "Meridian Shipping Logistics runs an internal operations portal for tracking global cargo manifests. One archived manifest — M-2015-0317 — has been flagged for a synchronization failure that was never fully explained.\nSomething in the manifest pipeline is still reachable. Find it.",
-    "difficulty": "hard",
-    "points": 750,
-    "flag": "BreachPoint{7h3_74rg37_w45_n3v3r_7h3_5h1p5}"
-  },
-  {
-    "title": "Follow the Name",
-    "description": "The trail begins in the professional world. Find Beatriz.",
-    "difficulty": "easy",
-    "points": 250,
-    "flag": "BreachPoint{penhalongacatering.com}"
-  },
-  {
-    "title": "The Echoed Memory",
-    "description": "You have been given access to a fan-maintained memorial archive for the dissolved Meridian Institute. Most of the material is public, heavily sanitized, and supposedly preserved from old snapshots.",
-    "difficulty": "hard",
-    "points": 750,
-    "flag": "BreachPoint{H0W_3CH0_M0V35_H1D35_P3R51575}"
-  },
-  {
-    "title": "Core Initialization Routine",
-    "description": "The Meridian Institute’s official archives claim Project ECLIPSE was built strictly to forecast natural disasters and macro-economic collapse. Yet inside the recovered 2009 initialization binary, the neural network's objective function is locked deep inside a custom 8-bit virtual machine. Reversing the bytecode instructions reveals that ECHO's underlying training objective was never designed for disaster prediction—it was built to anticipate individual human decisions.",
-    "difficulty": "medium",
-    "points": 500,
-    "flag": "BreachPoint{7r41n3d_70_pr3d1c7_d3c1510n5_n07_d154573r5}"
-  },
-  {
-    "title": "The Training Data Exploits",
-    "description": "Archived training logs are locked behind a project-key cipher hidden within trusted rows of consent records. Crack the encryption to expose a dark truth that the public materials deliberately hid about the training data.",
-    "difficulty": "medium",
-    "points": 500,
-    "flag": "BreachPoint{7r41n1ng_d474_w45_r34l_p30pl3}"
-  },
-  {
-    "title": "Git Ignore",
-    "description": "Three echoes remain.\n\nThe artifact survived.\n\nThe methods used to read them did not.\n\nDeleted does not mean forgotten.\n\nThree timelines.\nThree fragments.",
-    "difficulty": "easy",
-    "points": 250,
-    "flag": "BreachPoint{5c0r3_m345ur35_c3r741n7y_n07_r15k}"
-  },
-  {
-    "title": "Residual Index",
-    "description": "An ordinary archive hides a structure that was never meant to be seen.Trace the anomalies, uncover the displaced metadata, and follow the hidden trail beyond the directory.Not every recovered fragment is genuine—decoys are waiting to mislead you.Reconstruct the chain, separate the signal from the noise, and uncover what the archive truly contains.",
-    "difficulty": "medium",
-    "points": 500,
-    "flag": "BreachPoint{f0r3c457_n4m3d_b3f0r3_7h3_ch01c3}"
-  },
-  {
-    "title": "The Eerie Forecast",
-    "description": "Backbone traffic conceals a communication channel that was never meant to be discovered.Amid noisy packets and deliberate misdirection, anomalies in the payload and timing hint at something deeper.Trace the unusual patterns, correlate the relevant streams, and reconstruct what lies beneath the traffic.The signal may not be where you expect it—look beyond the obvious protocol fields.Separate the noise from the hidden channel and uncover what The Eerie Forecast is really saying.",
-    "difficulty": "hard",
-    "points": 750,
-    "flag": "BreachPoint{7h3_f0r3c457_n4m35_u5}"
-  },
-  {
-    "title": "Inference Pipeline: Memory Ingestion",
-    "description": "The futures lab assumed ECHO was running isolated simulations on air-gapped hardware. However, dynamic analysis of its live ingestion client (c6.exe) reveals aggressive anti-forensic timing checks and a bitwise rotation cipher guarding its authentication channel. Reversing the input transformation pipeline to unlock the live telemetry feed uncovers a chilling realization: the parameters ECHO is actively processing are process names, system state, and telemetry metrics pulled directly from the investigation itself.",
-    "difficulty": "hard",
-    "points": 750,
-    "flag": "BreachPoint{3ch0_15_r34d1ng_7h3_1nv3571g4710n}"
-  },
-  {
-    "title": "THE 404 MOMENT",
-    "description": "The timeline returned a 404.\n\nA message from another point in time was lost during the collapse. Only a corrupted image survived in the archive.\n\nThe fragments are still there — hidden beneath what you can see.\n\nRecover the lost message and submit the flag.\n\nThe archivist left one final note:\n“Every breach leaves a signature. The first few characters may be more useful than the rest.”",
-    "difficulty": "medium",
-    "points": 500,
-    "flag": "BreachPoint{x0r_k3y_r3c0v3r3d_pr3d1c73d_7h3_pr3d1c70r}"
-  },
-  {
-    "title": "A Point in The Storm",
-    "description": "Part 1: Every storm has a name. Every landfall has a date. Find both.\nFlag Format: Name_DDMMYYYY\nPart 2: Find the square.\nFinal Flag Format: BreachPoint{part1flag_part2flag}",
-    "difficulty": "hard",
-    "points": 750,
-    "flag": "BreachPoint{Maemi_13092003_mass.back.pigment}"
-  },
-  {
-    "title": "The Forgotten Forecast",
-    "description": "The futures lab suspects ECHO's sanitized dashboard hides information. A raw forecast API exists for administrative use, but its authorization check was accidentally omitted. Analysts only see sanitized forecasts, but archived ECHO records may still exist inside the system.",
-    "difficulty": "easy",
-    "points": 250,
-    "flag": "BreachPoint{7h3_f0r3c457_pr3d4735_7h3_3v3n7}"
-  },
-  {
-    "title": "Race or Pay",
-    "description": "A quiet transaction can change everything. The numbers look right. The rules seem straightforward. Yet somewhere between request and response, the system may not be keeping up with itself. Can you uncover what happens when the right actions happen at the wrong time—and push the balance beyond the 1000 mark? > In banking, every second counts.",
-    "difficulty": "medium",
-    "points": 500,
-    "flag": "BreachPoint{WHY_3CH0_R3H34R535_4_53C0ND_71M3}"
+    "Title": "layercake",
+    "Description": "One layer of obfuscation is a speed bump. This checker has four, stacked on top\nof each other, and it will only say \"Correct!\" for exactly one input.",
+    "Difficulty": "medium",
+    "Category": "reverse engineering",
+    "Points": 500,
+    "flag": "BreachPoint{layers_p33l_0ff_1_at_a_t1me}",
+    "Resource link": "https://drive.google.com/file/d/1qroANM9prN9wClZ2xA7FyNfnQ_OlK98a/view?usp=drive_link"
   }
 ]

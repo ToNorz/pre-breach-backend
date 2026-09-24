@@ -1,0 +1,1 @@
+ALTER TABLE "core_challenge" ADD COLUMN "category" text DEFAULT 'Misc' NOT NULL;

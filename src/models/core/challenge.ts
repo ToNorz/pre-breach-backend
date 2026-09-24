@@ -10,9 +10,11 @@ export const coreChallenge = pgTable(
     id: uuid("id").primaryKey().defaultRandom(),
     title: text("title").notNull(),
     description: text("description").notNull(),
+    category: text("category").notNull().default("Misc"),
     difficulty: challengeDifficulty("difficulty").notNull(),
     points: integer("points").notNull(),
     flagHash: text("flag_hash").notNull(),
+    resourceLink: text("resource_link"),
 
     ...timestamps,
     ...authorship,
